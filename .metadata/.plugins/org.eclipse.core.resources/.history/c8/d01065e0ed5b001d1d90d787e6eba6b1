@@ -1,0 +1,14 @@
+package loops;
+
+public class Loops {
+
+	public static void main(String[] args) {
+		
+ String C = "Welcome, Boufa simo";
+ String[] H = C.split ("\\, ");
+System.out.println(H[1]);
+
+ 
+ 
+ 
+	}}

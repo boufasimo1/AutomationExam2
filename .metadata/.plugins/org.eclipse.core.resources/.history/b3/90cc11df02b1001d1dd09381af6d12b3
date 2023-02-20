@@ -1,0 +1,29 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import tests.ExamTest;
+
+public class HomePage {
+
+	
+//	WebDriver driver;
+//	public HomePage (WebDriver driver) {
+//		this.driver= driver ;
+//	}
+	WebDriver driver;
+	
+
+	@FindBy (how = How.XPATH , using= "/html/body/div[3]/input[3]") WebElement Toggle_All_Checkbox ;
+	@FindBy (how = How.XPATH , using= "//*[@id=\"todos-content\"]/form/ul/li[1]/input") WebElement Toggle_Checkbox ;
+	
+	public void clickOnToggleAllCheckBox () {
+		
+		Toggle_All_Checkbox.click();
+	}
+	
+}

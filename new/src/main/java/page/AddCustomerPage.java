@@ -1,0 +1,38 @@
+package page;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+public class AddCustomerPage {
+
+	WebDriver driver ;
+	
+//	Element List
+	
+	@FindBy (how = How.XPATH , using ="//*[@id=\"page-wrapper\"]/div[2]/div/h2") WebElement Add_Contact_Header_Element;
+	@FindBy (how = How.XPATH , using ="//*[@id=\"account\"]") WebElement Full_Name_Element;
+	@FindBy (how = How.XPATH , using ="//*[@id=\"cid\"]") WebElement Company_Element;
+	@FindBy (how = How.XPATH , using ="//*[@id=\"phone\"]") WebElement Phone_Element;
+	
+	
+	public void insertFullName (String name) {
+		Full_Name_Element.sendKeys(name);
+	}
+	public void SelectCompanyName (String company) {
+		Select sel = new Select (Company_Element);
+		sel.selectByVisibleText(company);
+	}
+	public void verifyingAddCustomerPage (String addCustomertext) {
+//		WebDriverWait wait = new WebDriverWait(driver,5);
+//		wait.until(ExpectedConditions.visibilityOf(Add_Contact_Header_Element));
+		
+		Assert.assertEquals(addCustomertext, Add_Contact_Header_Element.getText(), "wroooong");
+	}
+}

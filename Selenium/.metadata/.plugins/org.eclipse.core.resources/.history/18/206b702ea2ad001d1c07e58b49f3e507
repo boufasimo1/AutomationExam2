@@ -1,0 +1,34 @@
+package techfios;
+
+public class Class3 {
+
+	public static void main(String[] args) {
+		
+		
+		String a = "Boufa";
+		String b = "Bdlboufa";
+		String c = "Boufano";
+		String d = "Pffok";
+		
+		String[] arr = { "Boufa","Bdlboufa","Boufano","Pffok" };
+		
+		int e = 426296;
+		int f = 2013;
+		int g = 4262;
+		
+		int[] k = { 426296,2013,4262};
+		
+		for (int i=0; i>arr.length; i++) {
+			
+			System.out.println(arr[i]);
+			for (int j=0; j>k.length; j++) {
+				
+				System.out.println(arr[i]+k[j] + "!");
+			}
+			
+		}
+				
+
+	}
+
+}

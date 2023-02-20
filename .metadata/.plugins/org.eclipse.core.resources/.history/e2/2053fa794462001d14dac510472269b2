@@ -1,0 +1,17 @@
+package loops;
+
+import java.util.LinkedHashMap;
+
+public class Map {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		LinkedHashMap<String, String> m = new  LinkedHashMap<String, String>();
+		  m.put("A", "line");
+          System.out.println(m);
+	
+	}
+
+}

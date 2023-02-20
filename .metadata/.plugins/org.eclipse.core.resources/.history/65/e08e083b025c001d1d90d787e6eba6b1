@@ -1,0 +1,16 @@
+package loops;
+
+public class Sleepin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+boolean a = true;
+if (a) {
+	System.out.println("yes");
+}
+	}
+	
+}
+
+
+

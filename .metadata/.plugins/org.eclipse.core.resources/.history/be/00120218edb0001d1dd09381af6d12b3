@@ -1,0 +1,8 @@
+package javaa;
+
+public class test {
+public static void main(String[] args) {
+	String h = "apple - a fruit, a tech firm";
+	System.out.println(h.split("-"));
+}
+}

@@ -1,0 +1,31 @@
+package loops;
+
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Tes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Set<Integer> myC = new TreeSet<Integer>();
+		
+		myC.add(45);
+		myC.add(56);
+		myC.add(78);
+		myC.add(25);
+		myC.add(55);
+		myC.add(55);
+		myC.add(55);
+		myC.add(55);
+		System.out.println(myC);
+
+	Object[] myArray = myC.toArray();
+	
+	System.out.println(myArray[0]);
+	}
+
+}

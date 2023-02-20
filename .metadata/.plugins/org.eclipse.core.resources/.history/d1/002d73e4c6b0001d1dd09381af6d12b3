@@ -1,0 +1,38 @@
+package pages;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+public class TodoListPage {
+
+
+
+
+
+  
+  private WebDriver driver;
+  
+  @FindBy(id = "toggle-all")
+  private WebElement toggleAllCheckbox;
+  
+  @FindBy(css = "ul.todo-list li input[type='checkbox']")
+  private List<WebElement> todoListCheckboxes;
+  
+  @FindBy(css = "ul.todo-list li button.destroy")
+  private List<WebElement> todoListRemoveButtons;
+  
+  public TodoListPage(WebDriver driver) {
+    this.driver = driver;
+  }
+  
+  public void selectAllTodoItems() {
+    toggleAllCheckbox.click();
+  }
+  
+  public void selectTodoItem(int index) {
+    todoListCheckboxes.get(index).click();
+  }
+  
+  public void removeTodoItem(int index) {
+    todoListRemoveButtons.get(index).click();
+  }
+} 

@@ -1,0 +1,29 @@
+package loops;
+
+import java.util.Scanner;
+
+public class Sleepin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner ui = new Scanner(System.in);
+		int a = ui.nextInt();
+		int b = ui.nextInt();
+		boolean c = ui.nextBoolean();
+		System.out.println(d(a,b,c));
+		
+		
+	}
+	public static boolean d(int a,int b, boolean c) {
+		if (c) {
+		return (a < 0 && b < 0);
+		}
+		else {
+		return ((a < 0 && b > 0) || (a > 0 && b < 0));
+		}
+	}
+	
+}
+
+
+

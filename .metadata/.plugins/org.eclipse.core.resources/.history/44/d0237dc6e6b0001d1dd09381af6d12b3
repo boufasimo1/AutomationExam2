@@ -1,0 +1,31 @@
+package javaa;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Random;
+
+public class Javaaaa {
+
+	public static void main(String[] args)  {
+		doesFileExist("C:\\Users\\simou\\eclipsorkspace\\javaa\\DataExam\\data.txt");
+			
+	}
+	public static void doesFileExist (String path) {
+		try {
+		
+		File f = new File (path);
+		FileReader fr = new FileReader(f);
+		BufferedReader r = new BufferedReader(fr);
+		
+		
+	
+		
+	} catch (FileNotFoundException e) {
+		System.out.println("the file does not exist");
+	}
+
+}
+}

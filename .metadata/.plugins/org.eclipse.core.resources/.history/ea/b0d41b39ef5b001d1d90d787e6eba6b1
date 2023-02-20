@@ -1,0 +1,18 @@
+package loops;
+
+public class Loops {
+
+	public static void main(String[] args) {
+		
+ String c = "Mom";
+ char[] b = c.toCharArray();
+ 
+ for (int i=c.length();i>0 ;i-- ) {
+	 
+	System.out.println(b[i]);
+ }
+ 
+ 
+ 
+ 
+	}}

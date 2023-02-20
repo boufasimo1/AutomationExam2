@@ -1,0 +1,49 @@
+package loops;
+
+import java.util.Scanner;
+
+public class Loops {
+
+	public static void main(String[] args) {
+	Scanner ui = new Scanner(System.in)	;
+	
+// String c = ui.nextLine();
+// char[] b = c.toCharArray();
+ boolean w = false ;
+ 
+//String k ="" ;
+//
+// 
+// 
+// for (int i=c.length()-1;i>=0 ;i-- ) {
+//		k =k+ b[i];
+//	}
+  String l = null;
+//  w = c.equalsIgnoreCase(k);
+ 
+  
+  
+ 
+ 
+	 while (w==false) {
+  
+		 l = ui.nextLine();
+		 String v ="" ;
+		 char[] h = l.toCharArray();
+		 System.out.println("nort");
+		for (int i=l.length()-1;i>=0 ;i-- ) {
+			v =v+ h[i];
+		}
+		System.out.println(v);
+		 w = l.equalsIgnoreCase(v);
+	 }
+
+	 System.out.println("it's a palindrom");
+	 
+		
+	
+ 
+ 
+ 
+	}
+	}

@@ -1,0 +1,14 @@
+package techfios;
+
+public class Class3 {
+
+	public static void main(String[] args) {
+		
+		ClassOne obj = new AnotherOne();
+		ClassOne obj2 = new ClassOne();
+		obj.tist();
+		obj2.tist();
+
+	}
+
+}

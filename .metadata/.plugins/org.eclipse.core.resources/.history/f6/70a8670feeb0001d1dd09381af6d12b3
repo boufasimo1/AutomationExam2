@@ -1,0 +1,14 @@
+package javaa;
+
+import java.util.ArrayList;
+
+public class test {
+public static void main(String[] args) {
+	String h = "apple - a fruit, a tech firm";
+	String[] ary = h.split("-");
+	System.out.println(ary);
+	
+	
+	
+}
+}

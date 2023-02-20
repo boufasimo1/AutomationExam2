@@ -1,0 +1,13 @@
+package javaa;
+
+import java.util.ArrayList;
+
+public class test {
+public static void main(String[] args) {
+	String h = "apple - a fruit, a tech firm";
+	String[] ary = new String[2];
+	ary[2]="11";
+	
+	
+}
+}

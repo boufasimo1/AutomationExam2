@@ -1,0 +1,30 @@
+package pages;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ExamTest {
+
+	@Test
+	public void testToggleAllSelectsAllItems() {
+	  // Instantiate the WebDriver and navigate to the webpage
+	  WebDriver driver = new ChromeDriver();
+	  driver.get("http://techfios.com/test/106/");
+	  
+	  // Instantiate the Page Object for the webpage
+	  TodoListPage todoListPage = new TodoListPage(driver);
+	  
+	  // Click on the Toggle All checkbox to select all items
+	  todoListPage.selectAllTodoItems();
+	  
+	  // Verify that all checkboxes for the list items are checked
+	  for (WebElement checkbox : todoListPage.getTodoListCheckboxes()) {
+	    assertTrue(checkbox.isSelected());
+	  }
+	  
+	  // Close the browser window
+	  driver.quit();
+	}
+}

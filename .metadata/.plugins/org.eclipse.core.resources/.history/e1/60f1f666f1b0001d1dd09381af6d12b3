@@ -1,0 +1,14 @@
+package javaa;
+
+
+
+public class test {
+public static void main(String[] args) {
+	
+String g = new String("hello");
+
+System.out.println(g);
+	
+	
+}
+}

@@ -1,0 +1,11 @@
+package javaa;
+
+
+
+public class test {
+public static void main(String[] args) {
+	
+	String bath = "//*[@id=\"todos-content\"]/form/ul/li[1]/input";
+	System.out.println(bath.charAt(38));
+}
+}

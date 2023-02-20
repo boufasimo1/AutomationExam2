@@ -1,0 +1,17 @@
+package techfios;
+
+public class AnotherOne extends ClassOne {
+
+	public static void main(String[] args) {
+		
+		
+		
+//		ClassOne t = new ClassOne();
+//		int b =t.a;
+
+		int h =k;
+		System.out.println(k);
+		
+	}
+
+}

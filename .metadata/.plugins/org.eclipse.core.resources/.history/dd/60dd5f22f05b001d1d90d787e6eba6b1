@@ -1,0 +1,22 @@
+package loops;
+
+public class Loops {
+
+	public static void main(String[] args) {
+		
+ String c = "Dela3";
+ char[] b = c.toCharArray();
+ 
+ 
+String k ="" ;
+ 
+ for (int i=c.length()-1;i>0 ;i-- ) {
+	 k =k+ b[i];
+	 
+	
+ }
+ System.out.println(k);
+ 
+ 
+ 
+	}}
